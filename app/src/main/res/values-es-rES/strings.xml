@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arkanhelp</string>
+    <string name="welcome">Bienvenidos</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="do_not_have_account_sign_up">No tienes una cuenta? Regístrate.</string>
+    <string name="change_language">Cambiar Lenguaje</string>
+</resources>
