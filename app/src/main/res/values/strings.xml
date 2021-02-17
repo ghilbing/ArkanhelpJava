@@ -6,6 +6,56 @@
     <string name="login">Login</string>
     <string name="do_not_have_account_sign_up">Do not have an account? Sign Up</string>
     <string name="change_language">Change Language</string>
+    <string name="settings">Settings</string>
+    <string name="main">Main</string>
+    <string name="service_activation">Arkanhelp Activation</string>
+    <string name="always_active">Always Active</string>
+    <string name="set_the_service_to_run_always">Set Arkanhelp to run always</string>
+    <string name="set_text_message">Set text message</string>
+    <string name="aditional_info">Aditional Info to Share</string>
+    <string name="geo_location">Geolocation</string>
+    <string name="save_and_send_audio">Save and send audios</string>
+    <string name="accelerometer_sensitivity">Accelerometer Sensitivity</string>
+    <string name="share_location">Share Location</string>
+    <string name="share_your_location_in_your_message">Share Location in your Message</string>
+    <string name="save_audios">Save audios</string>
+    <string name="save_ambient_sound">Save ambient sound</string>
+    <string name="send_audios">Send audios</string>
+    <string name="waiting_time_before_asking_help">Waiting time to ask for help</string>
+    <string name="waiting_time">Waiting Time</string>
+    <string name="define_how_much_time_you_will_wait_to_ask_for_help">Define how much time you will wait to ask for help</string>
+    <string name="audio_duration">Audio Duration</string>
+    <string name="i_need_help">I need help!!!</string>
+    <string name="edit_help_message">Help message</string>
+    <string name="please_enter_your_help_message">Please, enter your text message</string>
+    <string name="enter_help_message">Enter help message</string>
+    <string name="send_messages">Send messages</string>
+    <string name="arkanhelp_will_not_send_help_messages">Arkanhelp will not send help messages</string>
+    <string name="messages_deactivated">Messages Deactivated</string>
+    <string name="messages_activated">Messages Activated</string>
+    <string name="audios">Audios</string>
+    <string name="not_recording_audios">Not recording audios</string>
+    <string name="arkanhelp_will_record_audios">Arkanhelp will record audios</string>
+    <string name="do_not_share_my_location">Do not share my location</string>
+    <string name="do_not_send_audios">Do not send audios</string>
+    <string name="send_audios_in_message">Send audios with help message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="home">Home</string>
 
 
 </resources>
