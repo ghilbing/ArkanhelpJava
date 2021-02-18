@@ -1,6 +1,7 @@
 package com.hilbing.arkanhelp.activities;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -16,6 +17,7 @@ public class SettingsActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
         getListView().setScrollbarFadingEnabled(true);
+
     }
 
     public static class MyPreferenceFragment extends PreferenceFragment{
