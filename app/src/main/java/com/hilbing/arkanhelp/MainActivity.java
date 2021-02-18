@@ -18,7 +18,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.hilbing.arkanhelp.activities.SettingsActivity;
 
 import java.util.Locale;
 
@@ -49,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.fragment_main);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
         NavigationUI.setupActionBarWithNavController(this, navController);
-
-
     }
+
+
 
     private void setAppLocale(String localeCode){
         Resources resources = getResources();
@@ -76,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.settings:
-                startActivity(new Intent(this, SettingsActivity.class));
+               // startActivity(new Intent(this, SettingsActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

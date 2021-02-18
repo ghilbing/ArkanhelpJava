@@ -65,6 +65,9 @@
     <string name="notifications">Notifications</string>
     <string name="favorites">Favorites</string>
     <string name="logs">Logs</string>
+    <string name="test">Test</string>
+    <string name="alert">Alert</string>
+    <string name="help">Help</string>
 
 
 </resources>
