@@ -56,6 +56,15 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="home">Home</string>
+    <string name="activate_messages">Activate Messages</string>
+    <string name="arkanhelp_will_send_help_messages">Arkanhelp will send help messages</string>
+    <string name="audio_header">Audio</string>
+    <string name="do_not_save_audios">Do not save audios</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="sensitivity">Sensitivity</string>
+    <string name="notifications">Notifications</string>
+    <string name="favorites">Favorites</string>
+    <string name="logs">Logs</string>
 
 
 </resources>

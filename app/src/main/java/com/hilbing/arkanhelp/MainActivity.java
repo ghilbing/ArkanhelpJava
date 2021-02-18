@@ -3,6 +3,10 @@ package com.hilbing.arkanhelp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -13,11 +17,21 @@ import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.hilbing.arkanhelp.activities.SettingsActivity;
 
 import java.util.Locale;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
+
+    NavController navController;
+    NavHostFragment navHostFragment;
+
+    @BindView(R.id.bottomNav)
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +40,15 @@ public class MainActivity extends AppCompatActivity {
         //english
         setAppLocale("en");
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(R.string.main);
+
+        //Getting the Navigation Controller
+        navController = Navigation.findNavController(this, R.id.fragment_main);
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+
 
     }
 
@@ -59,5 +79,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        navController = navHostFragment.getNavController();
+        return navController.navigateUp() || super.onSupportNavigateUp();
     }
 }
