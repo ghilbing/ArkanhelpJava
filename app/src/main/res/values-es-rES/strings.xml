@@ -66,4 +66,17 @@
     <string name="notifications">Notifications</string>
     <string name="favorites">Favorites</string>
     <string name="logs">Logs</string>
+    <string name="test">Test</string>
+    <string name="alert">Alert</string>
+    <string name="help">Help</string>
+    <string name="no_motion_detected">No motion detected</string>
+    <string name="fall_detected">Fall detected</string>
+    <string name="service_channel">Service Channel</string>
+    <string name="fall_service_channel">Fall Service Channel</string>
+    <string name="count_down_channel">Count Down Channel</string>
+    <string name="arkanhelp">A R K A N H E L P</string>
+    <string name="service_running">Service Running</string>
+    <string name="fired_boot_complete">Fired boot complete</string>
+    <string name="restart_service_when_stopped">RestartServiceWhenStopped</string>
+    <string name="this_device_do_not_support_accelerometer">This device does not support accelerometer</string>
 </resources>

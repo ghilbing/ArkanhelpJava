@@ -7,55 +7,76 @@
     tools:context=".fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/activate_messages_swt">
 
-        <TextView
-            android:id="@+id/service_active_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/service_activation"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/test_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/roundedgreenbtn"
+            android:text="@string/test"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/minutes_waiting_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/waiting_time"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alert_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/roundedyellowbtn"
+            android:text="@string/alert"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/save_audios_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/save_ambient_sound"/>
-
-        <TextView
-            android:id="@+id/share_location_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/share_location"/>
-
-        <ProgressBar
-            android:id="@+id/accelerometer_sensitivity_pb"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:textColor="@android:color/black"
-            style="?android:attr/progressBarStyleHorizontal"/>
-
-
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/help_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/roundedredbtn"
+            android:text="@string/help"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/activate_messages_swt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/activate_messages"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
