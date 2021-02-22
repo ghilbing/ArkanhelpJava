@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbarFadeDuration="0">
+
+    <PreferenceCategory
+        android:title="@string/service_activation"
+        android:icon="@drawable/ic_message">
+
+        <SwitchPreference
+            android:key="@string/send_messages"
+            android:title="@string/send_messages"
+            android:summaryOff="@string/messages_deactivated"
+            android:summaryOn="@string/messages_activated"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/waiting_time_before_asking_help">
+
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/sendHelpMessageWaitingTime"
+            android:entryValues="@array/sendHelpMessageWaitingTimeValues"
+            android:key="waiting_time_list"
+            android:title="@string/waiting_time"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/set_text_message"
+        >
+
+        <EditTextPreference
+            android:defaultValue="@string/i_need_help"
+            android:key="editTextMessage_et"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edit_help_message"
+            android:dialogTitle="@string/enter_help_message"
+            app:useSimpleSummaryProvider="true"
+            android:inputType="textCapSentences"
+            android:dialogIcon="@drawable/ic_help"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/geo_location">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="geolocation_cb"
+            android:title="@string/share_location"
+            android:summaryOn="@string/share_your_location_in_your_message"
+            android:summaryOff="@string/do_not_share_my_location"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/audios"
+        >
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="save_audios_cb"
+            android:title="@string/save_audios"
+            android:summaryOff="@string/not_recording_audios"
+            android:summaryOn="@string/arkanhelp_will_record_audios"/>
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/sendHelpMessageWaitingTime"
+            android:entryValues="@array/sendHelpMessageWaitingTimeValues"
+            android:key="list_preference_1"
+            android:dependency="save_audios_cb"
+            android:title="@string/audio_duration"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="save_audios_cb"
+            android:key="send_audios_cb"
+            android:title="@string/send_audios"
+            android:summaryOff="@string/do_not_send_audios"
+            android:summaryOn="@string/send_audios_in_message"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/accelerometer_sensitivity"
+        >
+
+    </PreferenceCategory>
+</PreferenceScreen>
